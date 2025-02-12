@@ -1,5 +1,3 @@
----
-
 # **Frontend Boilerplate Documentation**
 
 ## **Introduction**  
