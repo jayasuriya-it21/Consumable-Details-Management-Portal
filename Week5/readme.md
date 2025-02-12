@@ -34,27 +34,27 @@
 ## 🎨 Screenshots
 
 ### 📌 Dashboard
-[![Pic1](images/pic1.png)](pic1.png)
+[![Pic1](images/pic1.png)](images/pic1.png)
 
 ---
 
 ### 📌 New Order
-[![Pic2](images/pic2.png)](pic2.png)
+[![Pic2](images/pic2.png)](images/pic2.png)
 
 ---
 
 ### 📌 View Order
-[![Pic3](images/pic3.png)](pic3.png)
+[![Pic3](images/pic3.png)](images/pic3.png)
 
 ---
 
 ### 📌 Order Management
-[![Pic4](images/pic4.png)](pic4.png)
+[![Pic4](images/pic4.png)](images/pic4.png)
 
 ---
 
 ### 📌 Report Generate
-[![Pic5](images/pic5.png)](pic5.png)
+[![Pic5](images/pic5.png)](images/pic5.png)
 
 ---
 
