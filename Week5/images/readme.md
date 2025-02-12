@@ -5,20 +5,20 @@
 
 ---
 
-### 📌 New Product
+### 📌 New Order
 [![Pic2](pic2.png)](pic2.png)
 
 ---
 
-### 📌 Product List
+### 📌 View Order
 [![Pic3](pic3.png)](pic3.png)
 
 ---
 
-### 📌 User Management
+### 📌 Order Management
 [![Pic4](pic4.png)](pic4.png)
 
 ---
 
-### 📌 Usage Details
+### 📌 Report Generate
 [![Pic5](pic5.png)](pic5.png)
