@@ -1,4 +1,4 @@
-### **📌 Detailed Description of the Project: "Consumable Details Management Portal"**  
+# **Consumable Details Management Portal**  
 
 ---
 
