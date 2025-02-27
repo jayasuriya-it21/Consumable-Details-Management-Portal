@@ -13,7 +13,7 @@ The **Consumable Details Management Portal (PS70)** is a **web-based inventory m
 - Rakesh M (Database Administrator)  
 - Praveen R (Security & Testing Specialist)  
 
-🔹 **Guide:** Ms. Vaishnavi M (Associate Professor, CSE)  
+🔹 **Guide:** Ms. Vaishnavi M (Assitant Professor, CSE)  
 
 ---
 
