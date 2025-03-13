@@ -1,183 +1,229 @@
-# **S8 Project Work II - Consumable Details Management Portal**  
+### **Detailed Description of the Project**  
+# 🚀 **S8 Project Work II – Consumable Details Management Portal**  
+
+The **Consumable Details Management Portal** is a full-stack web-based application designed to automate and streamline the management of consumable resources such as office supplies, laboratory materials, and other essential consumables within an organization. Built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js), the project provides efficient inventory tracking, request handling, and approval workflows with real-time stock management, ensuring a secure and scalable solution.
 
 ---
 
-## **📌 Project Overview**  
-The **Consumable Details Management Portal (PS70)** is a **web-based inventory management system** designed to **streamline the tracking, procurement, and usage of consumable inventory** across various organizations. The system aims to **automate inventory processes**, **reduce wastage**, and **enhance transparency** in managing consumables.  
-
-🔹 **Project ID:** 24S7INT369  
-🔹 **Category:** External – Own  
-🔹 **Batch Members:**  
-- Santosh K (Backend Developer)  
-- Jayasuriya J (Frontend Developer)  
-- Rakesh M (Database Administrator)  
-- Praveen R (Security & Testing Specialist)  
-
-🔹 **Guide:** Ms. Vaishnavi M (Assitant Professor, CSE)  
+## 🔎 **Project Overview**  
+### ✅ **Purpose**  
+The project addresses inefficiencies in traditional manual inventory systems, such as paper-based or Excel-driven methods, which lead to stock mismanagement, delayed approvals, and limited visibility into resource levels.  
+👉 The centralized portal delivers **real-time inventory visibility**, **automated request handling**, and **streamlined approval workflows**, offering a seamless experience for users and administrators alike.
 
 ---
 
-## **🎯 Project Aim & Objectives**  
+## 🎯 **Aim & Objectives**  
+### **Aim:**  
+To develop an efficient and secure consumable management portal that automates the tracking, requesting, and approval of consumables in an organization.
 
-### **🛠 AIM:**  
-To develop a **Consumable Details Management Portal** that provides **efficient tracking, monitoring, and management of consumable inventory** to improve **resource utilization, cost-effectiveness, and operational efficiency**.  
-
-### **🎯 OBJECTIVES:**  
-✅ **Efficient Inventory Tracking** – Enable **real-time monitoring** to prevent overstocking or shortages.  
-✅ **Automated Procurement Workflow** – Simplify **requisition and approval** processes to avoid delays.  
-✅ **Cost Optimization** – Reduce wastage and control expenses by analyzing **usage patterns**.  
-✅ **Data Transparency & Reporting** – Generate **analytics and reports** for informed decision-making.  
-✅ **Security & Access Control** – Ensure role-based permissions for **Admins, Staff, and Vendors**.  
-✅ **Multi-Platform Support** – Access via **web and mobile** for remote tracking.  
+### **Objectives:**  
+✅ **Automate Request and Approval Process:** Minimize human error and accelerate processing times.  
+✅ **Real-time Stock Visibility:** Provide up-to-date tracking of stock levels and order statuses.  
+✅ **Precise Inventory Management:** Handle stock adjustments based on approvals, rejections, and returns.  
+✅ **Secure Access:** Implement role-based access control to safeguard sensitive data.  
+✅ **Enhanced User Experience:** Deliver an intuitive, responsive interface for both users and admins.  
 
 ---
 
-## **📌 Scope of the Project**  
+## 🚨 **Problem Statement**  
+> Many organizations still rely on manual tracking and paper-based systems to manage consumable resources, resulting in:  
 
-### **🔍 Problem Statement:**  
-Many organizations still **manually track consumables**, leading to **human errors, inefficiencies, and financial losses**. This system **automates** and **digitizes** inventory management.  
-
-### **📌 Why is this needed?**  
-🔹 **Traditional tracking is error-prone** → Leads to **mismanagement and shortages**.  
-🔹 **Automation reduces workload** → Faster **requisitions, tracking, and reporting**.  
-🔹 **Operational cost control** → Optimizes **inventory spending**.  
-🔹 **Real-time analytics & insights** → Improves **decision-making**.  
-🔹 **Scalability & Customization** → Adapts to different **organizations' needs**.  
-🔹 **Sustainability Goals** → Reduces **wastage and promotes environmental responsibility**.  
+❌ Stock discrepancies due to outdated records.  
+❌ Delayed approvals and order processing.  
+❌ Resource wastage and mismanagement.  
+❌ Inadequate tracking of returnable and consumable items.  
+❌ Lack of centralized control and real-time analytics.  
 
 ---
 
-## **📌 Key Features & Modules**  
-
-### **📌 1. User Authentication & Role-Based Access**  
-- **Admin**: Full control over inventory & user management.  
-- **Staff**: Can request consumables, view stock, and check usage.  
-- **Vendors**: Receive purchase orders and update deliveries.  
-
-### **📌 2. Consumable Inventory Management**  
-- **Add, Update, Delete Consumables** (Item Name, SKU, Supplier, etc.)  
-- **Stock Level Tracking** (Available, Reserved, Issued, Used)  
-- **Search & Filter Functionality**  
-
-### **📌 3. Stock Issuance & Procurement**  
-- **Request Consumables** – Staff can request items.  
-- **Approval Workflow** – Admin/Manager approves or denies requests.  
-- **Automatic Purchase Order Generation** – Triggers restocking when inventory is low.  
-
-### **📌 4. Notifications & Alerts**  
-- **Low Stock Alerts** – Notifies Admin when stock is low.  
-- **Request Status Updates** – Alerts users on approval or rejection.  
-
-### **📌 5. Data Analytics & Reporting**  
-- **Usage Reports** – Track daily/monthly inventory consumption.  
-- **Cost Reports** – Analyze spending patterns.  
-- **User Activity Logs** – View inventory movement and requests.  
-
-### **📌 6. Integration with External Systems**  
-- **ERP Integration** – Synchronize with enterprise software.  
-- **IoT & Cloud Support** – Optional for enhanced tracking.  
+## 🏆 **Proposed Solution**  
+The **Consumable Details Management Portal** offers a centralized, automated solution:  
+✅ A **User Dashboard** enables users to request materials, track statuses, and view stock availability in real time.  
+✅ An **Admin Dashboard** empowers administrators to approve/reject requests, manage stock, and access analytics.  
+✅ The system automates request processing, order status updates, and stock adjustments seamlessly.  
+✅ Secure login and authentication using JWT ensure data protection and role-specific access.  
 
 ---
 
-## **📌 System Design & Architecture**  
+## 🏗️ **System Architecture**  
+The project follows a **client-server architecture** with the following components:  
 
-### **Frontend (Client-Side)**  
-🔹 **Framework/Library:** React.js  
-🔹 **State Management:** Apollo Client (GraphQL)  
-🔹 **Key Features:**  
-✅ **Dynamic UI** – Manage inventory, suppliers, and users.  
-✅ **Real-time Updates** – WebSocket/GraphQL Subscriptions.  
-✅ **User-friendly Forms** – CRUD operations for consumables.  
+### 🌐 **Frontend** (React.js)  
+- **Framework:** React.js  
+- **State Management:** React Hooks (useState, useEffect)  
+- **Routing:** React Router  
+- **API Handling:** Axios  
+- **UI Styling:** Custom CSS with gradients and animations (updated from Tailwind CSS/Material UI)  
+- **Charts:** Recharts (for dynamic analytics)  
 
----
+### 🖥️ **Backend** (Node.js + Express.js)  
+- **Framework:** Node.js + Express.js  
+- **Database:** MongoDB (NoSQL)  
+- **Data Handling:** Mongoose  
+- **Encryption:** Bcrypt.js for password hashing  
+- **API Security:** JWT for authentication, role-based middleware  
 
-### **Backend (Server-Side)**  
-🔹 **Frameworks:** Node.js + Express.js  
-🔹 **API Type:** Apollo GraphQL + REST fallback  
-🔹 **Key Features:**  
-✅ **Handles API Requests** – Manages inventory, procurement, and user roles.  
-✅ **Business Logic Implementation** – Approval workflows, notifications.  
-✅ **Security** – User authentication via JWT/OAuth.  
-
----
-
-### **Database (Storage Layer)**  
-🔹 **Primary Database:** **MySQL / PostgreSQL** (Structured data)  
-🔹 **NoSQL Option:** **MongoDB** (Logs, analytics)  
-🔹 **Key Features:**  
-✅ **Stores stock details, orders, and users.**  
-✅ **Optimized queries for large datasets.**  
-✅ **Data encryption & security compliance.**  
+### 🔐 **Security**  
+- Role-based access control (Admin/User) via `adminMiddleware.js`.  
+- Secure authentication with JWT stored in local storage.  
+- Input validation and encrypted data handling using bcrypt in `authController.js`.  
 
 ---
 
-### **📦 DevOps & Deployment**  
-- **Docker** – Containerized application.  
-- **GitHub Actions** – CI/CD pipeline for automated deployment.  
-- **SonarCloud** – Code quality checks.  
-- **Cloud Hosting (AWS/Azure)** – Scalable deployment.  
+## 📋 **Key Features**  
+
+### **1. User Dashboard**  
+✅ User Login and Registration with JWT authentication (`Login.jsx`, `Register.jsx`).  
+✅ View available stock with real-time updates (`UserDashboard.jsx`).  
+✅ Submit requests for consumables with validation (e.g., quantity vs. stock) (`RequestForm.jsx`).  
+✅ Track request status (Pending → Approved/Rejected → Shipped/Delivered) (`OrderTracking.jsx`).  
+✅ Return returnable items, triggering automatic stock updates.  
 
 ---
 
-## **📌 System Workflow (Data Flow & User Journey)**  
-1️⃣ **User Requests Consumable** – Staff submits a request.  
-2️⃣ **Approval Workflow** – Admin reviews & approves request.  
-3️⃣ **Stock Adjustment** – Inventory levels update automatically.  
-4️⃣ **Order Placement (if needed)** – System generates a purchase order.  
-5️⃣ **Reports & Alerts** – Generates analytics and sends notifications.  
+### **2. Admin Dashboard**  
+✅ Approve or reject user requests with stock adjustments (`RequestList.jsx`).  
+✅ Manage stock levels (add, update, delete products) (`ManageInventory.jsx`).  
+✅ Manage user roles and profiles (`UserManagement.jsx`).  
+✅ View real-time analytics via Recharts (`AdminDashboard.jsx`).  
+✅ Track order history and stock changes dynamically.  
 
 ---
 
-## **📌 Team Responsibilities**  
-
-🔹 **Santosh K (Backend Developer)**  
-- Set up **Apollo Server** and GraphQL APIs.  
-- Implement **email notifications & authentication (JWT/OAuth)**.  
-- Integrate with external APIs (if needed).  
-
-🔹 **Jayasuriya J (Frontend Developer)**  
-- Develop UI using **React.js**.  
-- Implement **user authentication and dashboard views**.  
-- Manage **search, filters, and inventory display**.  
-
-🔹 **Rakesh M (Database Administrator)**  
-- Design & optimize **database schema (MySQL/PostgreSQL)**.  
-- Ensure **data security & query optimization**.  
-- Manage **backup & restore policies**.  
-
-🔹 **Praveen R (Security & Testing)**  
-- Implement **HTTPS, input validation, and encryption**.  
-- Conduct **penetration testing & vulnerability assessments**.  
-- Handle **CI/CD setup & deployment**.  
+### **3. Request Management**  
+✅ Create requests from the user dashboard with purpose and date details.  
+✅ Update status based on admin actions (Pending → Approved/Rejected).  
+✅ Automatically adjust stock levels in `requestController.js`.  
+✅ Handle returnable items with `isReturned` status updates.  
 
 ---
 
-## **📌 Feasibility Analysis**  
-
-### **✅ Technical Feasibility**  
-- Uses **React, Node.js, and MySQL** (widely supported technologies).  
-- The system is **scalable** with future integrations.  
-
-### **✅ Operational Feasibility**  
-- Easy to use with **minimal training**.  
-- Reduces **manual workload** and improves efficiency.  
-
-### **✅ Financial Feasibility**  
-- **Low-cost solution** using open-source tools.  
-- Saves money by **preventing overstocking & wastage**.  
-
-### **✅ Legal Feasibility**  
-- Ensures **compliance with data protection laws**.  
-- Maintains **ethical inventory tracking**.  
+### **4. Stock Management**  
+✅ Real-time stock visibility with dynamic updates in `UserDashboard.jsx`.  
+✅ Stock reduction upon request approval in `requestController.js`.  
+✅ Stock increase upon rejection or return of items.  
+✅ Planned reorder alerts when stock levels drop (pending implementation).  
 
 ---
 
-## **📌 Conclusion**  
-The **Consumable Details Management Portal** provides a **scalable, efficient, and secure** solution for managing inventory. With **real-time tracking, automated workflows, and powerful analytics**, it ensures **optimized resource utilization and cost-effectiveness**.  
+### **5. Reports and Analytics**  
+✅ Real-time stock usage visuals via Recharts in dashboards.  
+✅ User request status tracking (`OrderTracking.jsx`).  
+✅ Stock consumption insights (partially implemented, pending full reports).  
+✅ Returnable vs. non-returnable item tracking in `Request.js`.  
 
-✅ **Future Enhancements:**  
-- **AI-based demand forecasting**.  
-- **Mobile app integration**.  
-- **Barcode/QR code scanner support**.  
+---
 
-🚀 **This project is a game-changer for organizations dealing with consumables!**
+### **6. Notifications**  
+✅ Planned email notifications for approval/rejection updates (pending).  
+✅ Planned low-stock alerts for admins (pending).  
+
+---
+
+## 🛠️ **Database Design**  
+### **1. User Schema** (`User.js`)  
+| Field        | Type    | Description             |  
+|--------------|---------|-------------------------|  
+| `name`       | String  | User's name             |  
+| `email`      | String  | User's email for login  |  
+| `password`   | String  | Encrypted password      |  
+| `role`       | String  | User or Admin           |  
+| `phone`      | String  | Contact number          |  
+| `address`    | String  | User's address          |  
+| `department` | String  | Department of user      |  
+| `image`      | String  | Profile image URL       |  
+
+---
+
+### **2. Product Schema** (`Product.js`)  
+| Field            | Type    | Description             |  
+|------------------|---------|-------------------------|  
+| `productId`      | String  | Unique product ID       |  
+| `name`           | String  | Name of the product     |  
+| `stockRemaining` | Number  | Current stock available |  
+| `image`          | String  | Product image URL       |  
+
+---
+
+### **3. Request Schema** (`Request.js`)  
+| Field            | Type     | Description                        |  
+|------------------|----------|------------------------------------|  
+| `userId`         | ObjectID | Reference to User                 |  
+| `productId`      | ObjectID | Reference to Product              |  
+| `quantity`       | Number   | Quantity requested                |  
+| `purpose`        | String   | Purpose of request                |  
+| `isReturnable`   | Boolean  | True/False for return eligibility |  
+| `fromDate`       | Date     | Start date of request             |  
+| `toDate`         | Date     | End date of request               |  
+| `requestDate`    | Date     | Date of request submission        |  
+| `status`         | String   | Pending, Approved, Rejected       |  
+| `trackingStatus` | String   | Pending, Shipped, Delivered       |  
+| `isReturned`     | Boolean  | If the product is returned        |  
+
+---
+
+## 🔄 **Workflow**  
+### ➡️ **User Flow:**  
+1. User logs in via `Login.jsx`.  
+2. Views dashboard and submits request via `RequestForm.jsx`.  
+3. Request status updates to "Pending" in `Request.js`.  
+4. Tracks order via `OrderTracking.jsx` with timeline.  
+5. Returns items if applicable, updating stock in `requestController.js`.  
+
+### ➡️ **Admin Flow:**  
+1. Admin logs in via `Login.jsx`.  
+2. Manages users (`UserManagement.jsx`) and stock (`ManageInventory.jsx`).  
+3. Reviews requests in `RequestList.jsx`.  
+4. Approves/rejects requests, adjusting stock in `requestController.js`.  
+5. Tracks orders and updates statuses in `OrderTracking.jsx`.  
+
+---
+
+## 🚧 **Development Phases**  
+✅ **Phase 1 – Initial Setup**: Configured MERN stack, set up folder structure (`backend/` and `frontend/`).  
+✅ **Phase 2 – Core Backend Development**: Built APIs (`authRoutes.js`, `requestRoutes.js`), schemas, and security (`authMiddleware.js`).  
+✅ **Phase 3 – Core Frontend Development**: Developed UI components (`UserDashboard.jsx`, `AdminDashboard.jsx`) and integrated APIs.  
+✅ **Phase 4 – Integration**: Linked frontend and backend with Axios for real-time sync.  
+⏳ **Phase 5 – Deployment**: Local deployment complete, cloud deployment pending.
+
+---
+
+## 💪 **Team Contributions**  
+👨‍💻 **Jayasuriya J (7376212IT160)** *(Frontend Developer)*  
+- Developed `UserDashboard.jsx`, `RequestForm.jsx`, `Login.jsx`, and `Register.jsx`.  
+- Integrated JWT authentication and Recharts for analytics.  
+
+👨‍💻 **Santhosh K (7376212IT221)** *(Backend Developer)*  
+- Built backend logic (`requestController.js`, `/api/requests`).  
+- Created MongoDB schemas (`User.js`, `Product.js`, `Request.js`) and controllers.  
+
+👨‍💻 **Rakesh M (7376212IT208)** *(Full Stack Developer)*  
+- Integrated `OrderTracking.jsx` and `RequestList.jsx` with APIs.  
+- Optimized real-time updates and API security (`authMiddleware.js`).  
+
+👨‍💻 **Praveen R (7376212IT201)** *(Admin Panel Developer)*  
+- Developed `AdminDashboard.jsx`, `UserManagement.jsx`, and `ManageInventory.jsx`.  
+- Implemented responsive styling and status updates.  
+
+---
+
+## 🎯 **Project Status**  
+✅ Fully functional backend (`server.js`) and frontend (`App.jsx`) with local deployment.  
+✅ Secure authentication and role-based access via JWT and middleware.  
+✅ Real-time updates and API integration (e.g., stock sync in `UserDashboard.jsx`).  
+⏳ Pending full testing (unit/integration), UI refinements (accessibility, mobile), and cloud deployment.
+
+---
+
+## 🔥 **Future Scope**  
+✅ Deploy on AWS/Heroku/Vercel for scalability.  
+✅ Enhance mobile responsiveness and support.  
+✅ Integrate predictive stock analysis using AI.  
+✅ Add barcode/QR code scanning for inventory tracking.  
+
+---
+
+## 🌟 **Conclusion**  
+The **Consumable Details Management Portal** is a robust solution for managing consumables, automating stock management, approval workflows, and real-time tracking. With a functional MERN-based system and ongoing enhancements, it significantly improves operational efficiency and reduces costs, poised for broader deployment and future scalability. ✅
+
+---
