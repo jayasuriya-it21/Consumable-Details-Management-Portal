@@ -9,8 +9,13 @@ const UserDashboard = () => {
   const [requestData, setRequestData] = useState([]);
   const [orderTrendData, setOrderTrendData] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [userName, setUserName] = useState(""); // New state for username
 
   useEffect(() => {
+    // Retrieve username from localStorage
+    const storedName = localStorage.getItem("userName");
+    setUserName(storedName || "User"); // Fallback to "User" if not found
+
     const fetchData = async () => {
       try {
         const [productsRes, ordersRes] = await Promise.all([
@@ -57,9 +62,14 @@ const UserDashboard = () => {
     setSelectedImage(null);
   };
 
+  const formatOrderId = (id) => {
+    const shortId = id.slice(-6);
+    return `ORD-${shortId.toUpperCase()}`;
+  };
+
   return (
     <div className="user-dashboard">
-      <h2 className="dashboard-title">Welcome, User</h2>
+      <h2 className="dashboard-title">Welcome, {userName}</h2> {/* Display dynamic username */}
       <div className="dashboard-container">
         {/* Analytics Section */}
         <div className="dashboard-analytics">
@@ -159,12 +169,12 @@ const UserDashboard = () => {
             <tbody>
               {orders.map((order) => (
                 <tr key={order._id}>
-                  <td>{order._id.slice(-6)}</td>
+                  <td>{formatOrderId(order._id)}</td>
                   <td>{order.productId?.name || "Unknown"}</td>
                   <td>{order.quantity}</td>
                   <td>{order.status}</td>
                   <td>
-                    <a href={`/order-tracking?orderId=${order._id}`} className="track-link">Track</a>
+                    <a href={`/order-details/${order._id}`} className="track-link">Track</a>
                   </td>
                 </tr>
               ))}
