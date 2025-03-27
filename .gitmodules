@@ -1,3 +1,5 @@
 [submodule "Comsumable_Details_Management_Portal"]
 	path = Comsumable_Details_Management_Portal
 	url = https://github.com/jayasuriya-it21/S8_Project.git
+[submodule "S8_Project"]
+	branch = main
